@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Bar demo</title>
+  
+</head>
+<body>
+    <script>
+        
+        
+        var nB = document.createElement('div');
+        nB.className = 'navbar';
+
+        nB.style.background='black';
+        nB.style.overflow='hidden';
+
+        var Hm = document.createElement('a');
+        Hm.href = '#';
+        Hm.textContent = 'Home';
+
+        Hm.style.float='left';
+        Hm.style.color='white'
+        Hm.style.textAlign='center';
+        Hm.style.padding='20px 140px';
+        Hm.style.textDecoration='none';       
+
+        var conLink = document.createElement('a');
+        conLink.href = '#';
+        conLink.textContent = 'Contact Us';
+
+
+        conLink.style.float='left';
+        conLink.style.color='white'
+        conLink.style.textAlign='center';
+        conLink.style.padding='20px 140px';
+        conLink.style.textDecoration='none';      
+
+        var signUp = document.createElement('a');
+        signUp.href = '#';
+        signUp.textContent = 'SignUp';
+
+        signUp.style.float='left';
+        signUp.style.color='white'
+        signUp.style.textAlign='center';
+        signUp.style.padding='20px 140px';
+        signUp.style.textDecoration='none';      
+
+        var signIn = document.createElement('a');
+        signIn.href = '#';
+        signIn.textContent = 'SignUp';
+
+        signIn.style.float='left';
+        signIn.style.color='white'
+        signIn.style.textAlign='center';
+        signIn.style.padding='20px 140px';
+        signIn.style.textDecoration='none';      
+
+        nB.appendChild(Hm);
+        nB.appendChild(conLink);
+        nB.appendChild(signUp);
+        nB.appendChild(signIn);
+
+        
+        document.body.insertBefore(nB, document.body.firstChild);
+    </script>
+</body>
+</html>
