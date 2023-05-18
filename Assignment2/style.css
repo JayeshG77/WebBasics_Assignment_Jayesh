@@ -1,0 +1,44 @@
+    .web-series-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .web-series {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      background-color: #010101;
+      color: #e5e2e2;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .web-series:hover {
+      transform: scale(1.1);
+    }
+
+    .web-series img {
+      width: 500px;
+      height: 500px;
+      border-radius: 4px;
+    }
+
+    .web-series figcaption {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .web-series h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .web-series p {
+      margin: 5px 0;
+    }
+
+  
