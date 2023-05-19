@@ -1,0 +1,31 @@
+!<!DOCTYPE html>
+<html>
+    <h1>Assignment 4.2</h1>
+    <script>
+
+        // 1. Find all books starting with 'Web'  : ['Web Basics','Web Fundamentals']
+
+        const bookNames = ['Learn Java', 'Basics of Python', 'Advanced Java Concepts', 'Web Basics', 'Easy Learning Python', 'Web Fundamentals', 'JAVA Fundamentals'];
+        const webBooks = bookNames.filter(book => book.startsWith('Web'));
+        console.log(" All books starting with Web "+"  "+webBooks);
+
+
+        // 2. Find all books which are related to Java :['Learn Java', 'Advanced java Concepts','JAVA fundamentals']
+
+        const javaBooks = bookNames.filter(book => book.includes('Java'));
+        console.log(" All books which are related to Java "+"  "+javaBooks);
+
+
+        // 3. Prepend 'Neo-' to every Book Name and Display new book name
+        
+        const newBookNamesWithNeo = bookNames.map(book => 'Neo-' + book);
+        console.log(" Prepended 'Neo-' to every Book Name "+"  "+newBookNamesWithNeo);
+
+
+        // 4. Display sum of length of every bookname
+
+        const sumOfLengths = bookNames.reduce((sumL, book) => sumL + book.length, 0);
+        console.log(" sum of length of every bookname "+"  "+sumOfLengths);
+
+    </script>
+</html>
